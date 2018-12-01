@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
+import ImageList from "./ImageList";
 
 class Search extends React.Component{
 
@@ -17,7 +18,10 @@ class Search extends React.Component{
 
     render(){
         return(
-            <div><SearchBar submit={this.onSearchSubmit}/></div>
+            <div>
+                <SearchBar submit={this.onSearchSubmit}/>
+                <ImageList Images={this.state.images}/>
+            </div>
         )
     }
 }
