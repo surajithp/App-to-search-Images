@@ -10,7 +10,8 @@ class SearchBar extends React.Component{
             <div>
                 <form>
                     <label htmlFor="txt">Search here:</label>
-                    <input type="text" />
+                    <input type="text" value={this.state.inputtext} 
+                    onChange={(event)=>this.setState({inputtext:event.target.value})} />
                 </form>
             </div>
         )
