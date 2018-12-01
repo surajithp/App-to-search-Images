@@ -5,10 +5,16 @@ import React from "react";
 class SearchBar extends React.Component{
     
     state={inputtext:""}
+    
+    onFormSubmit=(event)=>{
+        event.preventDefault();
+    }
+    
+    
     render(){
         return(
             <div>
-                <form>
+                <form onSubmit={this.onFormSubmit}>
                     <label htmlFor="txt">Search here:</label>
                     <input type="text" value={this.state.inputtext} 
                     onChange={(event)=>this.setState({inputtext:event.target.value})} />
@@ -19,6 +25,8 @@ class SearchBar extends React.Component{
 
 
 }
+
+export default SearchBar;
 
 
 
