@@ -9,7 +9,7 @@ class SearchBar extends React.Component{
    //callback function to prevent form element default behaviour  
     onFormSubmit=(event)=>{
         event.preventDefault();
-        this.props.submit(this.state.input)
+        this.props.submit(this.state.inputtext)
     }
     
     

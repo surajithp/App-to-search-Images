@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Search from "./components/Search"
 
 //Adding App class Component
 class App extends React.Component{
     render(){
-        return<div>Hi There</div>
+        return<div><Search/></div>
     }
 }
 
