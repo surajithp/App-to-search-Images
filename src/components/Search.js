@@ -11,6 +11,7 @@ class Search extends React.Component{
             params:{query:element},
             headers:{Authorization: "Client-ID 02231f22b458f98289c388e8b1fb33f6b9fe95405d5b5e7f38e1712729070f54"}
         })
+        this.setState({images:response.data.results})
         
     }
 
